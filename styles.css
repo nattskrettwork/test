@@ -1,0 +1,47 @@
+.carousel {
+    position: relative;
+    max-width: 200px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.2s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 1;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+body {
+    background-color: #7c6d6d; /* Серый фон */
+}
